@@ -37,7 +37,7 @@ export default function Home({ expressions, refresh }){
         <>
         {
           showForm ? 
-          <ExpressionAddForm showForm={showForm} setShowForm={setShowForm} />
+          <ExpressionAddForm showForm={showForm} setShowForm={setShowForm} refresh={refresh} />
           :
           <div class=' add-new-meaning show-home-form' onClick={() => setShowForm(!showForm)}>Do you know any expression/idiom? Click here to add one.</div>
         }
